@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Sweet Memories — ჯანსაღი, უშაქრო დესერტების ონლაინ მაღაზია თბილისში.">
+<title>კალათა და შეკვეთა | Sweet Memories</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js" defer></script>
+</head>
+<body data-page="cart">
+<header class="site-header">
+  <a class="logo" href="index.html">🍓 Sweet Memories</a>
+  <button class="menu-btn" aria-label="მენიუს გახსნა" aria-expanded="false" aria-controls="nav">☰</button>
+  <nav id="nav" class="nav" aria-label="მთავარი მენიუ"><a href="index.html">მთავარი</a><a href="products.html">პროდუქცია</a><a href="cart.html" aria-current="page">კალათა</a><a href="contact.html">კონტაქტი</a></nav>
+  <a class="cart" href="cart.html" aria-label="კალათა">🛒 <span id="cart-count">0</span> • <span id="cart-total">0 ₾</span></a>
+</header>
+<main>
+<section class="section"><h1 class="pt">კალათა</h1>
+<div id="cart-box"></div>
+<div id="checkout" hidden><h2>შეკვეთის გაფორმება</h2>
+<form id="order" class="wide" novalidate>
+<label for="name">სახელი და გვარი</label><input id="name" name="name" type="text" autocomplete="name"><small class="err" data-for="name"></small>
+<label for="phone">ტელეფონი (მაგ. 5xx xxx xxx)</label><input id="phone" name="phone" type="tel" autocomplete="tel"><small class="err" data-for="phone"></small>
+<label for="address">მისამართი (თბილისი)</label><input id="address" name="address" type="text" autocomplete="street-address"><small class="err" data-for="address"></small>
+<label for="date">მიტანის თარიღი</label><input id="date" name="date" type="date" ><small class="err" data-for="date"></small>
+<label for="pay">გადახდის მეთოდი</label><select id="pay"><option>ნაღდი ანგარიშსწორება</option><option>ბარათით კურიერთან</option></select><small class="err"></small>
+<button class="btn" type="submit">შეკვეთის დადასტურება</button></form></div>
+<div id="done" class="done" hidden></div></section>
+</main>
+<footer class="site-footer">© 2026 Sweet Memories • თბილისი • <a href="contact.html">კონტაქტი</a></footer>
+<div id="toast" class="toast" role="status" hidden></div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Sweet Memories — ჯანსაღი, უშაქრო დესერტების ონლაინ მაღაზია თბილისში.">
+<title>კონტაქტი | Sweet Memories</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js" defer></script>
+</head>
+<body data-page="contact">
+<header class="site-header">
+  <a class="logo" href="index.html">🍓 Sweet Memories</a>
+  <button class="menu-btn" aria-label="მენიუს გახსნა" aria-expanded="false" aria-controls="nav">☰</button>
+  <nav id="nav" class="nav" aria-label="მთავარი მენიუ"><a href="index.html">მთავარი</a><a href="products.html">პროდუქცია</a><a href="cart.html">კალათა</a><a href="contact.html" aria-current="page">კონტაქტი</a></nav>
+  <a class="cart" href="cart.html" aria-label="კალათა">🛒 <span id="cart-count">0</span> • <span id="cart-total">0 ₾</span></a>
+</header>
+<main>
+<section class="section about"><div><h1 class="pt left">დაგვიკავშირდით</h1>
+<ul class="facts"><li>📍 თბილისი, რუსთაველის გამზ. 12</li><li>📞 +995 555 00 00 00</li><li>✉️ hello@sweetmemories.ge</li><li>🕒 ორშ–შაბ, 10:00–20:00</li></ul></div>
+<form id="contact" novalidate>
+<label for="cname">სახელი</label><input id="cname" name="cname" type="text" autocomplete="name"><small class="err" data-for="cname"></small><label for="cemail">ელ-ფოსტა</label><input id="cemail" name="cemail" type="email" autocomplete="email"><small class="err" data-for="cemail"></small>
+<label for="cmsg">შეტყობინება</label><textarea id="cmsg" rows="4"></textarea><small class="err" data-for="cmsg"></small>
+<button class="btn" type="submit">გაგზავნა</button><p id="ok" class="ok" role="status" hidden>გმადლობთ! შეტყობინება მიღებულია.</p></form></section>
+</main>
+<footer class="site-footer">© 2026 Sweet Memories • თბილისი • <a href="contact.html">კონტაქტი</a></footer>
+<div id="toast" class="toast" role="status" hidden></div>
+</body>
+</html>

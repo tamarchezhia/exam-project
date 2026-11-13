@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html lang="ka">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Exam Project</title>
-    </head>
-    <body>
-        <header>
-            <h1>My Website</h1>
-        </header>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <nav>
-            <ul>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#blog">Blog</a></li>
-            </ul>
-        </nav>
-        <h1>Welcome to Exam Project</h1>
-        <p>This is my Git and GitHub practice project.</p>
-    </body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Sweet Memories — ჯანსაღი, უშაქრო დესერტების ონლაინ მაღაზია თბილისში.">
+<title>მთავარი | Sweet Memories</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js" defer></script>
+</head>
+<body data-page="home">
+<header class="site-header">
+  <a class="logo" href="index.html">🍓 Sweet Memories</a>
+  <button class="menu-btn" aria-label="მენიუს გახსნა" aria-expanded="false" aria-controls="nav">☰</button>
+  <nav id="nav" class="nav" aria-label="მთავარი მენიუ"><a href="index.html" aria-current="page">მთავარი</a><a href="products.html">პროდუქცია</a><a href="cart.html">კალათა</a><a href="contact.html">კონტაქტი</a></nav>
+  <a class="cart" href="cart.html" aria-label="კალათა">🛒 <span id="cart-count">0</span> • <span id="cart-total">0 ₾</span></a>
+</header>
+<main>
+<section class="hero">
+  <h1>დესერტი, რომელიც გემრიელიცაა და სასარგებლოც</h1>
+  <p>უშაქრო, ბუნებრივი ინგრედიენტებით დამზადებული ტკბილეული — მიტანით თბილისში.</p>
+  <a class="btn" href="products.html">შეარჩიე დესერტი</a>
+</section>
+<section class="section"><h2>პოპულარული პროდუქტები</h2><div id="featured" class="grid"></div></section>
+<section id="about" class="section about">
+  <div><h2>ჩვენ შესახებ</h2>
+  <p>Sweet Memories დაარსდა იმ იდეით, რომ ტკბილი და ჯანსაღი ერთმანეთს არ გამორიცხავს. ვიყენებთ ფინიკს, თაფლს, თხილსა და ქერს — რაფინირებული შაქრის გარეშე. ყველა დესერტს ვამზადებთ შეკვეთის დღეს.</p></div>
+  <ul class="facts"><li><strong>0%</strong> რაფინირებული შაქარი</li><li><strong>100%</strong> ბუნებრივი ინგრედიენტი</li><li><strong>24 სთ</strong> მიტანა თბილისში</li></ul>
+</section>
+<section class="section alt"><h2>მომხმარებლები გვიყვებიან</h2>
+  <div class="slider"><button class="arrow" id="prev" aria-label="წინა">‹</button><div id="slides" class="slides"></div><button class="arrow" id="next" aria-label="შემდეგი">›</button></div>
+  <div id="dots" class="dots"></div></section>
+</main>
+<footer class="site-footer">© 2026 Sweet Memories • თბილისი • <a href="contact.html">კონტაქტი</a></footer>
+<div id="toast" class="toast" role="status" hidden></div>
+</body>
 </html>

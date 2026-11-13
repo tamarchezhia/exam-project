@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Sweet Memories — ჯანსაღი, უშაქრო დესერტების ონლაინ მაღაზია თბილისში.">
+<title>პროდუქცია | Sweet Memories</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js" defer></script>
+</head>
+<body data-page="products">
+<header class="site-header">
+  <a class="logo" href="index.html">🍓 Sweet Memories</a>
+  <button class="menu-btn" aria-label="მენიუს გახსნა" aria-expanded="false" aria-controls="nav">☰</button>
+  <nav id="nav" class="nav" aria-label="მთავარი მენიუ"><a href="index.html">მთავარი</a><a href="products.html" aria-current="page">პროდუქცია</a><a href="cart.html">კალათა</a><a href="contact.html">კონტაქტი</a></nav>
+  <a class="cart" href="cart.html" aria-label="კალათა">🛒 <span id="cart-count">0</span> • <span id="cart-total">0 ₾</span></a>
+</header>
+<main>
+<section class="section"><h1 class="pt">ჩვენი პროდუქცია</h1>
+<div class="toolbar">
+  <div class="filters" role="group" aria-label="ფილტრი"><button class="chip active" data-filter="all">ყველა</button><button class="chip" data-filter="vegan">ვეგანური</button><button class="chip" data-filter="gf">უგლუტენო</button><button class="chip" data-filter="raw">უმი</button></div>
+  <input id="search" type="search" placeholder="ძებნა..." aria-label="ძებნა">
+  <select id="sort" aria-label="დალაგება"><option value="def">დალაგება</option><option value="asc">ფასი: ზრდადი</option><option value="desc">ფასი: კლებადი</option></select>
+</div><div id="grid" class="grid"></div><p id="empty" hidden>პროდუქტი ვერ მოიძებნა.</p></section>
+</main>
+<footer class="site-footer">© 2026 Sweet Memories • თბილისი • <a href="contact.html">კონტაქტი</a></footer>
+<div id="toast" class="toast" role="status" hidden></div>
+</body>
+</html>
